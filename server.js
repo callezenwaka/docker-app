@@ -24,8 +24,8 @@ let mongoUrlLocal = "mongodb://admin:password@localhost:27017";
 // pass these options to mongo client connect request to avoid DeprecationWarning for current Server Discovery and Monitoring engine
 let mongoClientOptions = { useNewUrlParser: true, useUnifiedTopology: true };
 
-// "user-account" in demo with docker.
-let databaseName = "user-account";
+// "my-db" in demo with docker-compose.
+let databaseName = "my-db";
 
 app.post('/update-profile', function (req, res) {
   let userObj = req.body;
