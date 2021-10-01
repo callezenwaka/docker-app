@@ -1,11 +1,11 @@
 # mongo.yaml
 version: '3'
 services:
-  # docker-app:
-  #   restart: always
-  #   build: .
-  #   ports:
-  #     - 3000:3000
+  docker-app:
+    image: 266287732992.dkr.ecr.us-east-1.amazonaws.com/docker-app:v1.2.0
+    restart: unless-stopped
+    ports:
+      - 3000:3000
   mongodb:
     image: mongo
     ports:
