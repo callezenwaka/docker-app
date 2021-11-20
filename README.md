@@ -1,4 +1,5 @@
 # Application Deployment with Docker
+**N:B-** This repository is arranged by tag.
 
 ## Set up:
 1. Clone repo
